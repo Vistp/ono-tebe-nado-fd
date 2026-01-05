@@ -1,1 +1,69 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 96px;
+  font-size: 18px;
+  /* TODO: заменить на множитель */
+  line-height: 24px;
+}
+
+.header__menu {
+  /* TODO: пока нет стилей */
+}
+
+.header__links-list {
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  /* TODO: пока нет стилей */
+  text-transform: lowercase;
+} 
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  width: 124px;
+}
+
+/* Общие стили блока контактов для шапки и подвала */
+.address {
+  font-style: normal;  
+}
+
+.header__address {
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  max-width: 240px;
+}
+
+.section {
+  margin-bottom: 180px;
+}
+
+.cover {
+  padding: 165px 50px 50px;
+  background-image: url(/images/cover.jpg);
+}
+
+.lots {
+  margin-bottom: 120px;
+  padding: 0 24px;
+  background-color: rgb(213, 123, 236);
+}
+
+.about {
+  padding: 0 24px;
+  background-color: rgb(95, 236, 189);
+}
