@@ -214,6 +214,46 @@
 /* Секция about */
 
 .about {
+  display: grid;
+  grid-template-columns: 334px auto;
+  gap: 25px;
   padding: 0 24px;
   background-color: rgb(95, 236, 189);
+}
+
+.about__column {
+  /* TODO: пока нет стилей */
+}
+
+.center {
+  justify-self: center;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.about__logo-image {
+  width: 146px;
+}
+
+.about__title {
+  margin-top: 136px;
+  margin-bottom: 100px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
 }
