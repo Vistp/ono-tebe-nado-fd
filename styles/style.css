@@ -1,3 +1,4 @@
+/* Шапка сайта */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -33,7 +34,7 @@
 
 .header__logo {
   display: block;
-  width: 124px;
+  width: 136px;
 }
 
 /* Общие стили блока контактов для шапки и подвала */
@@ -48,20 +49,102 @@
   max-width: 240px;
 }
 
+/* Основной контент */
+
 .section {
   margin-bottom: 180px;
 }
 
+/* Секция cover */
+
 .cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 757px;
   padding: 165px 50px 50px;
   background-image: url(/images/cover.jpg);
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 1;
 }
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: -1;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 100px;
+  line-height: 115%;
+  /* text-transform: uppercase; */
+  
+  /* color: #fff; */
+}
+
+.letter-spacing-extended {
+  letter-spacing: 30px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_left {
+  text-align: left;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover__description-text {
+ font-size: 22px;
+ line-height: 28px;
+ font-weight: normal;
+ word-spacing: 18px;
+}
+
+.bet-button {
+  padding: 12px 32px;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* Секция lots */
 
 .lots {
   margin-bottom: 120px;
   padding: 0 24px;
   background-color: rgb(213, 123, 236);
 }
+
+/* Секция about */
 
 .about {
   padding: 0 24px;
