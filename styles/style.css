@@ -257,3 +257,62 @@
   gap: 24px;
   font-size: 20px;
 }
+
+/* Подвал сайта */
+
+.footer {
+  display: grid;
+  /*  Размеры колонок подобраны с учетом расположения элементов в макете */
+  grid-template-columns: 264px 2fr 1fr;
+  padding: 0 50px 82px;
+  background-color: bisque;
+  font-size: 18px;
+}
+
+/* TODO: вынести общее в address */
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
+}
+
+.footer__menu {
+
+}
+
+.footer__menu-list {
+  text-align: center;
+  list-style: none;
+}
+
+.footer__menu-list-item {
+
+}
+
+.footer__menu-link {
+  text-transform: lowercase;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  justify-self: end;
+  display: flex;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-list-item {
+
+}
+
+.footer__social-link {
+  display: block;
+  width: 48px;
+}
+
+.footer__social-icon {
+
+}
